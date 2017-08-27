@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Object</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function Person(name) {
+      this.name = name;
+      this.type = "person";
+      this.greeting = function () {
+        console.log('Halo nama saya ' + this.name);
+      }
+      return this;
+    }
+
+    function Mobil(merek, warna, cc, kursi, tipe) {
+      this.merek = merek + "";
+      this.warna = warna + "";
+      this.cc = parseInt(cc);
+      this.kursi = parseInt(kursi);
+      this.tipe = tipe + "";
+
+      this.maju = function () {
+        console.log("majuuu");
+      }
+      this.mundur = function () {
+        console.log("mundur");
+      }
+
+      this.angkut = function (jml) {
+        if (jml <= this.kursi) {
+          console.log("muat");
+        } else {
+          console.log("penuh");
+        }
+      }
+      return this;
+    }
+
+
+    function BankAccount(name) {
+      this.name = name;
+      this.balance = 0;
+
+      this.simpan = function (amount) {
+        // this.balance += amount;
+        this.balance = this.balance + amount;
+      }
+
+      this.tarik = function (amount) {
+        // this.balance -= amount;
+        this.balance = this.balance - amount;
+      }
+
+      return this;
+    }
+  </script>
+</body>
+
+</html>

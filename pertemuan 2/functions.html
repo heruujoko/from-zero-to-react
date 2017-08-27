@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Functions</title>
+</head>
+
+<body>
+  <script type="text/javascript">
+    function greeting() {
+      console.log('hello');
+    }
+
+    function kurang(a, b) {
+      return a - b;
+    }
+
+    function celciusToKelvin(celcius) {
+      return celcius + 273.15;
+    }
+
+    function celciusToFahrenheit(celcius) {
+      return celcius * 9 / 5 + 32;
+    }
+
+    function celciusToReamur(celcius) {
+      return 4 / 5 * celcius;
+    }
+
+    var cls = [70, 75, 80, 95];
+    cls.forEach(function (c) {
+      console.log(celciusToFahrenheit(c));
+    });
+
+    function ulangi(pekerjaan) {
+      for (var i = 0; i < 10; i++) {
+        pekerjaan();
+      }
+    }
+
+    ulangi(function () {
+      console.log('di ulangi');
+    })
+  </script>
+</body>
+
+</html>

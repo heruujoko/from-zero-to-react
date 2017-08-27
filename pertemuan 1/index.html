@@ -4,9 +4,10 @@
 
 <body>
   <script type="text/javascript">
-
-var teks = "!ini teks 1"; // string
+    const phi = 3.14;
+    var teks = "!ini teks 1"; // string
     var angka = 1; //integer
+    angka = 2;
     var float = 1.5 // float
     var arr = [1, 2, 4, 5, 6]; // array
     var obj = {
@@ -14,7 +15,6 @@ var teks = "!ini teks 1"; // string
       email: "herujokoutomo@gmail.com"
     }; // object
     var boolean = true; // tipe data boolean
-
 
     // operasi logika
 
@@ -29,69 +29,72 @@ var teks = "!ini teks 1"; // string
     // less than equal <=
 
     // if
-    var nilai = 65;
-    if(nilai >= 70){
-      // hanya di jalankan jika true
-      alert('lulus');
-    } else {
-      // hanya di jalankan jika false
-      alert('tidak lulus');
-    }
+    // var nilai = 80;
+    // if (nilai >= 70) {
+    //   // hanya di jalankan jika true
+    //   alert('lulus');
+    // } else {
+    //   // hanya di jalankan jika false
+    //   alert('tidak lulus');
+    // }
 
     // if bersarang
-    var kendaraan = "mobil";
-    var cuaca = "terik";
+    // var kendaraan = "mobil";
+    // var cuaca = "terik";
 
-    if(cuaca == "hujan"){
-      if(kendaraan == "motor"){
-        alert('pakai mantel');
-      } else {
-        alert('no problem')
-      }
-    } else {
-      if(kendaraan == "motor"){
-        alert('pakai jaket');
-      } else {
-        alert('nyalakan ac');
-      }
-    }
-    
-    var hari = "senin";
+    // if (cuaca == "hujan") {
+    //   if (kendaraan == "motor") {
+    //     alert('pakai mantel');
+    //   } else {
+    //     alert('no problem')
+    //   }
+    // } else {
+    //   if (kendaraan == "motor") {
+    //     alert('pakai jaket');
+    //   } else {
+    //     alert('nyalakan ac');
+    //   }
+    // }
 
-    switch(hari){
-      case 'minggu':
-        alert('waktu nya belajar js');
-        break;
-      case 'senin':
-      case 'selasa':
-      case 'rabu':  
-      case 'kamis':
-      case 'jumat':
-        alert('waktu kerja');
-        break;
-      case 'sebtu':
-        alert('libur');
-        break;  
-      default: 
-        alert('hari tidak ditemukan');
-      break;      
-        
-    }
+    // var hari = "senin";
 
-    var keranjang = ['teh','kopi','gula','minyak'];
+    // switch (hari) {
+    //   case 'minggu':
+    //     alert('waktu nya belajar js');
+    //     break;
+    //   case 'senin':
+    //   case 'selasa':
+    //   case 'rabu':
+    //   case 'kamis':
+    //   case 'jumat':
+    //     alert('waktu kerja');
+    //     break;
+    //   case 'sebtu':
+    //     alert('libur');
+    //     break;
+    //   default:
+    //     alert('hari tidak ditemukan');
+    //     break;
+
+    // }
+
+    // var arr = [1, 2, 3, 4, 5];
+    // arr.forEach(function (i) {
+    //   console.log(i)
+    // });
+
+    var keranjang = ['teh', 'kopi', 'gula', 'minyak'];
     // ++ 
     // i = i+1
     // for (mulai;batas akhir;mutasi index)
-    for(var x=0;x<keranjang.length;x++){
-      console.log('saya membeli '+keranjang[x]);
-    }
+    // for (var x = 0; x < keranjang.length; x++) {
+    //   console.log('saya membeli ' + keranjang[x]);
+    // }
 
-    // bagimana jika terbalik ?
-    
-    for(var i=keranjang.length -1 ;i>-1;i--){
-      console.log('saya membeli '+keranjang[i]);
+    // // bagimana jika terbalik ?
+    for (var i = keranjang.length - 1; i > -1; i--) {
+      console.log('saya membeli ' + keranjang[i]);
     }
-
   </script>
 </body>
 
