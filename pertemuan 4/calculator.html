@@ -1,0 +1,45 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <input type="number" placeholder="num 1" id="num1" />
+  <input type="number" placeholder="num 2" id="num2" />
+  <br />
+  <button id="plus">+</button>
+  <button id="minus">-</button>
+  <button id="multiply">*</button>
+  <button id="subtract">/</button>
+  <br />
+  <input type="number" placeholder="hasil" id="hasil" disabled />
+
+  <!-- complete the code to be a calculator -->
+  <!-- silahkan di buat fungsi selanjutnya untuk pengurangan perkalian dan pertambahan -->
+  <script type="text/javascript">
+    function tambah(a, b) {
+      return a + b;
+    }
+
+    var num1 = 0;
+    var num2 = 0;
+
+    document.getElementById('plus').addEventListener('click', function () {
+      num1 = parseInt(document.getElementById('num1').value)
+      num2 = parseInt(document.getElementById('num2').value)
+
+      /* parseInt di gunakan untuk melakukan convert nilai dari String menjadi Integer. Dimana semua nilai yg di ambil dari
+      elemen HTML adalah String tidak perduli bentuknya adalah angka atau apapun 
+
+        https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+      
+      */
+
+      var hasil = tambah(num1, num2);
+      document.getElementById('hasil').value = hasil;
+    });
+  </script>
+</body>
+
+</html>

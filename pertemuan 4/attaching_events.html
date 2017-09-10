@@ -1,0 +1,34 @@
+<html>
+
+<head>
+  <!-- for defining meta title style -->
+</head>
+
+<body>
+  <!-- define content that will displayed in the browser -->
+  <!-- js usually here -->
+
+  <select id="pilihan">
+      <option>Pilihan 1</option>
+      <option>Pilihan 2</option>
+      <option>Pilihan 3</option>
+      <option>Pilihan 4</option>
+    </select>
+  <br />
+  <textarea id="single"></textarea>
+
+  <!-- class and id are identifiers for html object to be connected with css or js -->
+  <!-- class is identifiers for multiple object -->
+  <!-- id is identifiers for single object -->
+
+  <script type="text/javascript">
+    document.getElementById("pilihan").addEventListener('change', function (e) {
+      console.log('changed')
+      // e is an event object passed as parameter. contains what happened during the events
+      console.log(e)
+      console.log(e.target.value)
+    });
+  </script>
+</body>
+
+</html>

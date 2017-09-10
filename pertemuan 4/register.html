@@ -1,0 +1,44 @@
+<html>
+
+<head>
+  <!-- for defining meta title style -->
+  <title>Register</title>
+</head>
+
+<body>
+  <!-- define content that will displayed in the browser -->
+  <!-- js usually here -->
+
+  Nama <input type="text" id="nama" />
+  <br/> Email <input type="email" id="email" />
+  <br/> Password <input type="password" />
+  <br/> Peran
+  <select>
+      <option>Admin</option>
+      <option>User</option>
+  </select>
+  <br/>
+  <button id="register" name="data">Register</button>
+
+  <!-- class and id are identifiers for html object to be connected with css or js -->
+  <!-- class is identifiers for multiple object -->
+  <!-- id is identifiers for single object -->
+  <script type="text/javascript">
+    var nama = "";
+    var email = "";
+    function register() {
+      console.log('nama adalah ' + nama);
+      console.log('nama adalah ' + document.getElementById('email').value);
+    }
+
+    document.getElementById('register').addEventListener('click', function () {
+      register();
+    });
+
+    document.getElementById('nama').addEventListener('keyup', function (e) {
+      nama = e.target.value;
+    });
+  </script>
+</body>
+
+</html>
